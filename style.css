@@ -1,0 +1,146 @@
+* {
+	font-family: 'Architects Daughter', cursive;
+	color: azure;
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	background: linear-gradient(to right top, #2d0661, #160661);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.glass {
+	background: white;
+	min-height: 80vh;
+	width: 60%;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+	border-radius: 2rem;
+	z-index: 3;
+	backdrop-filter: blur(100rem);
+}
+
+.circle1,
+.circle2 {
+	background: white;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+	height: 20rem;
+	width: 20rem;
+	position: absolute;
+	border-radius: 50%;
+}
+
+.circle1 {
+	top: 5%;
+	right: 10%;
+	z-index: 1;
+}
+
+.circle2 {
+	bottom: 5%;
+	left: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 4;
+	backdrop-filter: 2rem;
+}
+
+.headerBanner {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 2rem;
+}
+
+.pageTitle {
+	font-size: 72px;
+	text-shadow: 6px 6px 20px rgba(0, 0, 0, .2);
+}
+.credit {
+	display: flex;
+	align-content: flex-end;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+}
+
+.questionCard {
+	background-color: white;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+	border-radius: 2rem;
+	z-index: 4;
+	backdrop-filter: blur(100rem);
+	padding: 2rem;
+	width: 50%;
+	opacity: 0.8;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.getAnswer {
+	width: 100%;
+	display: flex;
+	min-height: 50vh;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.answerCard {
+	background-color: white;
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+	border-radius: 2rem;
+	z-index: 4;
+	backdrop-filter: blur(100rem);
+	padding: 2rem;
+	width: 50%;
+	min-height: 10rem;
+	align-items: center;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.answer {
+	font-size: 20px;
+}
+
+.buttonContainer {
+	width: 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.askButton {
+	background: none;
+	height: 10rem;
+	width: 10rem;
+	border-radius: 50%;
+	font-size: 32px;
+	cursor: pointer;
+	padding: 2rem;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footerBanner {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 50px;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	opacity: 0.8;
+}
